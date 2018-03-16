@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+
+.date-time-picker .date-field {
+  display: inline-block;
+  max-width: 200px;
+}
+
+.calendar .fc-view-month .fc-time {
+  display: none;
+}
+.calendar .fc-view-week .fc-description {
+  display: block;
+}
+.data-field {
+  display: inline-block;
+  max-width: 200px;
+}
+.title-field {
+  display: inline-block;
+  max-width: 200px;
+}
+.col-md-4 #time-from {
+  margin-top: 48px;
+}
+.col-md-4 #time-to {
+  margin-top: 48px;
+}
+
+.col-md-4 #time-from {
+  margin-top: 48px;
+}
+.col-md-4 #time-to {
+  margin-top: 48px;
+}
+
+.col-md-4 #time-from-cust {
+  margin-top: 5px;
+}
+.col-md-4 #time-to-cust {
+  margin-top: 5px;
+}
+
+/* sample directive LESS */
+.sample {
+  color: inherit;
+}
+
+/* home specific LESS */
+
+footer {
+  border-top: solid 1px #e0e0e0;
+}

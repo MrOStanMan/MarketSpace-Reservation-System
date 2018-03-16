@@ -1,0 +1,13 @@
+<span class="date-time-picker {{class}}">
+	<!-- Date Picker -->
+	<span class="date-field">
+		<input class="form-control" type="text" uib-datepicker-popup="{{format}}" ng-model="ngModelDate" is-open="popup.opened" required="true" close-text="Close" alt-input-formats="[]" placeholder="{{placeholder}}"/>
+	</span>
+	<span class="btn-calendar">
+		<button type="button" class="btn btn-primary btn-sm" ng-click="popup.opened = true"><i class="fa fa-calendar"></i></button>
+	</span>
+	<!-- Time Picker -->
+	<span class="time-field">
+		<div uib-timepicker ng-model="ngModelDate" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></div>
+	</span>
+</span>

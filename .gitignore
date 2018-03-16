@@ -1,0 +1,15 @@
+/node_modules/nodeunit
+/node_modules/grunt
+/node_modules/grunt-contrib-copy
+/node_modules/grunt-contrib-cssmin
+/node_modules/grunt-contrib-less
+/node_modules/grunt-contrib-nodeunit
+/node_modules/grunt-contrib-uglify
+/node_modules/grunt-contrib-watch
+/node_modules/.DS_Store
+/node_modules/supertest
+/node_modules/superagent
+/node_modules/pdf-text
+
+.DS_Store
+npm-debug.log

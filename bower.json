@@ -1,0 +1,45 @@
+{
+  "name": "marketspace-reservations",
+  "version": "0.0.0",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.2",
+    "angular-animate": "1.6.2",
+    "angular-cookies": "1.6.2",
+    "angular-bootstrap": "2.0.2",
+    "angular-chart.js": "1.1.1",
+    "angular-local-storage": "0.2.2",
+    "angular-google-maps": "2.4.1",
+    "angular-route": "1.6.2",
+    "angular-sanitize": "1.6.2",
+    "angular-simple-logger": "0.1.7",
+    "angular-toastr": "2.1.1",
+    "angular-ui-calendar": "1.0.2",
+    "angular-ui-sortable": "0.16.1",
+    "angular-vertilize": "1.0.1",
+    "bootstrap": "3.1.1",
+    "bootstrap-toggle": "2.2.2",
+    "font-awesome": "4.7.0",
+    "jquery": "3.1.1",
+    "jstree": "3.3.1",
+    "lodash": "3.10.1",
+    "moment": "2.14.1",
+    "octicons": "4.3.0",
+    "xdate": "0.8.1",
+    "fullcalendar": "2.4.0"
+  },
+  "resolutions": {
+    "angular": "1.6.2",
+    "jquery": "3.1.1",
+    "moment": "2.14.1",
+    "fullcalendar": "2.7.1"
+  }
+}

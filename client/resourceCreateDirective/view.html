@@ -1,0 +1,33 @@
+<div ng-if="isSeller"> <!-- remove html off page ng-if..ng-show is just for css -->
+	<div class="container">
+
+		<button  class="btn btn-success" ng-click="createResource()" >Create Resource</button>
+
+		<div class="form-group">
+			<label for="resourceTitle">Title</label>
+			<!--<input id="resourceTitle" class="form-control" type="text" name="title" ng-model="newSample.title">-->
+			<input id="resourceTitle" class="form-control" type="text" name="title" ng-model="newResource.title">
+
+			<label for="resourceCapacity">Capacity</label>
+			<!--<input id="resourceTitle" class="form-control" type="text" name="title" ng-model="newSample.title">-->
+			<input id="resourceCapacity" class="form-control" type="number" name="capacity" ng-model="newResource.capacity">
+		</div>
+
+		<div class="form-group">
+			<label>Booking Range</label>
+			<div>
+				<ms-date-time-picker ng-model="newResource.startDateTime" placeholder="From"></ms-date-time-picker>
+				<ms-date-time-picker ng-model="newResource.endDateTime" placeholder="To"></ms-date-time-picker>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div>
+
+
+
+
+

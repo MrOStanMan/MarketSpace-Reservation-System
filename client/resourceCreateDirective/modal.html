@@ -1,0 +1,111 @@
+<!--CreateModal-->
+
+<div ng-if="isSeller">
+    <div id="create-event-modal">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <h3>Create Resource</h3>
+            </div>
+            <div class="modal-body">
+                <!-- title -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Title</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <span class="title-field">
+                                <input id="resourceTitle" class="form-control" type="text" name="title" ng-model="newResource.title">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--&lt;!&ndash; all day &ndash;&gt;-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--&lt;!&ndash;<label>All Day Event</label>&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<div ng-model="newResource.allDay"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!-- capacity -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Capacity</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                        <span class="title-field">
+                            <input id="resourceCapacity" class="form-control" type="number" name="capacity" ng-model="newResource.capacity">
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--&lt;!&ndash; testArray &ndash;&gt;-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<label>Slot Number</label>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<div class="form-group">-->
+                        <!--<span class="title-field">-->
+                            <!--<input id="arrayTest" class="form-control" type="number" name="slotNumber" ng-model="newResource.randomValue">-->
+                        <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!-- data/time -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Date From</label>
+                        <div id="time-from">
+                            <label >Time From</label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                        <span class="date-field">
+                            <ms-date-time-picker ng-model="newResource.startDateTime" placeholder="From" id="dateFrom"></ms-date-time-picker>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Date To</label>
+                        <div id="time-to">
+                            <label >Time To</label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                        <span class="date-field">
+                            <ms-date-time-picker ng-model="newResource.endDateTime" placeholder="To" id="dateTo" ></ms-date-time-picker>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Description</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" id="comment" ng-model="newResource.description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success" ng-click="createResource()">Create Resource</button>
+                <button class="btn" ng-click= "cancel()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

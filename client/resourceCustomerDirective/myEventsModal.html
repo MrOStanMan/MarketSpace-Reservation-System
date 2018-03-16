@@ -1,0 +1,109 @@
+<!-- Customer Booking Modal -->
+<div ng-if="isCustomer">
+    <div id="my-reserved-events">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <h3>My Reserved Events</h3>
+            </div>
+            <div class="modal-body">
+                <!--&lt;!&ndash; title &ndash;&gt;-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<label>Title</label>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<div class="form-group">-->
+                            <!--<span class="title-field">-->
+                                <!--{{reservedEvents[0].slots[0].slotTitle}}-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; date &ndash;&gt;-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<label>From</label>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<div class="form-group">-->
+                            <!--<span class="date-field">-->
+                                 <!--{{reservedEvents[0].slots[0].slotStartDateTime | date:'MMM d, y  h:mm:ss a'}}-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<label>To</label>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<div class="form-group">-->
+                            <!--<span class="date-field">-->
+                                 <!--{{reservedEvents[0].slots[0].slotEndDateTime | date:'MMM d, y  h:mm:ss a'}}-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<label>Details</label>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<div class="form-group">-->
+                            <!--<span class="date-field">-->
+                                 <!--{{reservedEvents[0].slots[0].slotDescription}}-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>From</th>
+                    <th>To</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{reservedEvents[0].slots[0].slotTitle}}</td>
+                    <td>{{reservedEvents[0].slots[0].slotStartDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                    <td>{{reservedEvents[0].slots[0].slotEndDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                </tr>
+                <tr>
+                    <td>{{reservedEvents[1].slots[1].slotTitle}}</td>
+                    <td>{{reservedEvents[1].slots[1].slotStartDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                    <td>{{reservedEvents[1].slots[1].slotEndDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                </tr>
+                <tr>
+                    <td>{{reservedEvents[2].slots[2].slotTitle}}</td>
+                    <td>{{reservedEvents[2].slots[2].slotStartDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                    <td>{{reservedEvents[2].slots[2].slotEndDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                </tr>
+                <tr>
+                    <td>{{reservedEvents[3].slots[3].slotTitle}}</td>
+                    <td>{{reservedEvents[3].slots[3].slotStartDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                    <td>{{reservedEvents[3].slots[3].slotEndDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                </tr>
+                <tr>
+                    <td>{{reservedEvents[4].slots[4].slotTitle}}</td>
+                    <td>{{reservedEvents[4].slots[4].slotStartDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                    <td>{{reservedEvents[4].slots[4].slotEndDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                </tr>
+                <tr>
+                    <td>{{reservedEvents[5].slots[5].slotTitle}}</td>
+                    <td>{{reservedEvents[5].slots[5].slotStartDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                    <td>{{reservedEvents[5].slots[5].slotEndDateTime | date:'MMM d, y  h:mm:ss a'}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="modal-footer">
+                <button class="btn" ng-click= "cancel()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

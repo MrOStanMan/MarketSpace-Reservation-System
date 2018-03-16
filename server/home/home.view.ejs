@@ -1,0 +1,27 @@
+<% layout('../views/layout-reservations') -%>
+
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+
+<% if(user && user.isSeller) { %>
+
+<ms-resource-create-directive></ms-resource-create-directive>
+<ms-resource-list-directive></ms-resource-list-directive>
+<ms-resource-calendar-directive></ms-resource-calendar-directive>
+
+
+<% } else if(user && user.isCustomer) {%>
+
+ <ms-customer-directive></ms-customer-directive>
+<!--<ms-resource-list-directive></ms-resource-list-directive>-->
+<% } %>
+
+
+
+
+
+
+<!-- <a href="/resource/987">Go to resource 987</a> -->
+
+

@@ -1,0 +1,79 @@
+<!-- Customer Booking Modal -->
+<div ng-if="isCustomer">
+    <div id="my-modal-customer">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <h3>Book Event: {{bookSlot.title}}</h3>
+            </div>
+            <div class="modal-body">
+                <!-- title -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Title</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <span class="title-field">
+                                {{bookSlot.title}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- capacity -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label >Available spaces</label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        {{bookSlot.capacity}}
+                    </div>
+                </div>
+                <!-- date -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>From</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <span class="date-field">
+                                 {{bookSlot.startDateTime | date:'MMM d, y  h:mm:ss a'}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>To</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <span class="date-field">
+                                 {{bookSlot.endDateTime | date:'MMM d, y  h:mm:ss a'}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Details</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <span class="date-field">
+                                 {{bookSlot.description}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-show="!bookSlot.slots[0].reserved" ng-click="reserveEvent(bookSlot.resourceNumber)">Reserve Slot</button>
+                <button class="btn btn-danger"  ng-show="bookSlot.slots[0].reserved" ng-click="cancelEvent(bookSlot.resourceNumber)">Cancel Slot</button>
+                <button class="btn" ng-click= "cancel()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

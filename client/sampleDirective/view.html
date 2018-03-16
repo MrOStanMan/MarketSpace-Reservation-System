@@ -1,0 +1,31 @@
+<div>
+    <!-- This is a sample directive -->
+    <div >
+        <p ng-if="sample">Title: {{sample.title}}</p>
+        <p ng-if="sample.sampleNumber">Sample Number {{sample.sampleNumber}}</p>
+    </div>
+
+    <div class="container">
+        <p>Select Resource:</p>
+        <table class="table" >
+            <thead>
+            <tr>
+                <th><input type="checkbox" ng-model="selectAll" ng-click="checkAll()"</th>
+                <th>Resource name</th>
+            </tr>
+            </thead>
+            <tbody >
+            <tr ng-repeat="sample in samples">
+                <td><input type="checkbox" ng-model="personalDetail.selected"/> </td>
+                <td ng-if="sample">{{sample.title}}</td>
+                <td ng-if="sample.sampleNumber">{{sample.sampleNumber}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+</div>

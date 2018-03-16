@@ -1,0 +1,14 @@
+<footer>
+	<p>Logged in as user: <%= typeof(user) !== 'undefined' && user ? user.displayName + ' (' + user.userNumber + ')' : 'not logged in' %></p>
+	<p>
+		<a href="/">Home</a>
+		Switch to:
+		<!--<a href="/user/become-customer/1">Customer 1</a>-->
+		<a href="/user/become-customer/222">Customer 1</a>
+
+		<a href="/user/become-seller/222">Seller 222</a>
+		<!--<a href="/user/become-seller/333">Seller 333</a>-->
+
+		<!--<a href="/user/become-marketplace-owner">Marketplace Owner</a>-->
+	</p>
+</footer>
